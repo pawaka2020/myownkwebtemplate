@@ -2,11 +2,10 @@ package kweb.template
 
 import kweb.*
 
-fun main(args: Array<String>) {
-    Kweb(port = 16097, buildPage = {
-        doc.body.new {
-            h1().text("Replace Me!")
+fun main() {
+    Kweb(port = 16097) {
+        doc.body {
+            h1().text("Hello World!")
         }
-    })
+    }
 }
-
